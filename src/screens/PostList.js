@@ -154,7 +154,7 @@ export default class PostListScreen extends React.Component {
             autoscrollThreshold={10}
             data={this.state.postsData}
             renderItem={this.flatListItem}
-            keyExtractor={item => item.id}
+            keyExtractor={item => item.id.toString()}
           />
         </View>
 

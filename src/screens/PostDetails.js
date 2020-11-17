@@ -119,7 +119,7 @@ export default class PostDetailsScreen extends React.Component {
                     autoscrollThreshold={10}
                     data={this.state.commentsForPost}
                     renderItem={this.flatListItem}
-                    keyExtractor={item => item.id}
+                    keyExtractor={item => item.id.toString()}
                 />
             </View>
 
